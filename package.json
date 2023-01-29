@@ -1,7 +1,12 @@
 {
   "name": "rock-paper-scissor",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
+  "author": {
+    "name": "Andre Ferreira",
+    "email": "delcferreira@gmail.com",
+    "url": "https://andreferreia.xyz"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,5 +24,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "eslint-plugin-simple-import-sort": "^10.0.0"
   }
 }
