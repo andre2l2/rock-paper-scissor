@@ -8,19 +8,19 @@ import {
   TextContainer,
 } from "./style";
 
-export const Card: React.FC = () => {
+type CardProps = {
+  name: string;
+  img: string;
+};
+
+export const Card: React.FC<CardProps> = ({ name, img }) => {
   return (
     <CardContainer>
       <ImageContainer>
-        <Image
-          src="/images/scissor.svg"
-          alt="scissor"
-          width={180}
-          height={180}
-        />
+        <Image src={img} alt="image" width={180} height={180} />
       </ImageContainer>
       <TextContainer>
-        <SpanContainer>Scissor</SpanContainer>
+        <SpanContainer>{name}</SpanContainer>
       </TextContainer>
     </CardContainer>
   );

@@ -5,11 +5,12 @@ import { ColorsDefault } from "@/styles/colors";
 export const CardContainer = styled.div`
   height: 350px;
   width: 235px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: ${ColorsDefault.BACKGRAUND};
   border: 10px solid ${ColorsDefault.FONT};
   padding: 10px;
-  transition: 0.3s;
+  margin: 10px;
+  transition: 0.5s;
 
   cursor: pointer;
 
