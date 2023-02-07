@@ -6,6 +6,10 @@ import { HtmlHead } from "@/components/head";
 import { Paragrafy } from "@/components/paragrafy";
 import { Section } from "@/components/section";
 
+function onClick(name: string) {
+  console.log(name);
+}
+
 const Home: React.FC = () => {
   return (
     <>
@@ -13,9 +17,9 @@ const Home: React.FC = () => {
       <Section>
         <Paragrafy>by Andre Ferreira</Paragrafy>
         <Center type="center">
-          <Card name="Scissor" img="/images/scissor.svg" />
-          <Card name="Paper" img="/images/paper.svg" />
-          <Card name="Rock" img="/images/rock.svg" />
+          <Card name="Scissor" img="/images/scissor.svg" onClick={onClick} />
+          <Card name="Paper" img="/images/paper.svg" onClick={onClick} />
+          <Card name="Rock" img="/images/rock.svg" onClick={onClick} />
         </Center>
       </Section>
     </>

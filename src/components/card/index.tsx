@@ -11,11 +11,12 @@ import {
 type CardProps = {
   name: string;
   img: string;
+  onClick: (name: string) => void;
 };
 
-export const Card: React.FC<CardProps> = ({ name, img }) => {
+export const Card: React.FC<CardProps> = ({ name, img, onClick }) => {
   return (
-    <CardContainer>
+    <CardContainer onClick={() => onClick(name)}>
       <ImageContainer>
         <Image src={img} alt="image" width={180} height={180} />
       </ImageContainer>

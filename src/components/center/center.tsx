@@ -6,6 +6,7 @@ type CenterProps = {
 
 export const Center = styled.div<CenterProps>`
   display: flex;
+  height: 100%;
 
   ${({ type }) =>
     type === "center"

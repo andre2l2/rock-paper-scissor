@@ -10,7 +10,7 @@ export const CardContainer = styled.div`
   border: 10px solid ${ColorsDefault.FONT};
   padding: 10px;
   margin: 10px;
-  transition: 0.5s;
+  transition: 0.3s;
 
   cursor: pointer;
 
